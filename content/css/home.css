@@ -1,0 +1,82 @@
+body{
+    margin: 0px;
+}
+.bg{
+    position:relative;
+    background-color: #E4F8C3;
+    overflow: hidden;
+    width: 100%;
+    height:100%;
+}
+div{
+    overflow: hidden;
+}
+#img-title img{
+    width: 50%;
+    position: absolute;
+    top:35%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: fluffy 3s ease infinite;
+}
+
+#btn-start img{
+    width: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin: auto;
+}
+
+#btn-start-img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+  }
+
+#illust_01 img{
+    top:-5%;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: fuwafuwa2 3s ease infinite;
+}
+
+#illust_02 img{
+    top: -5%;
+    left: -3%;
+    width: 30%;
+    position: absolute;
+    margin: auto;
+    animation: fuwafuwa 3s ease infinite;
+}
+
+#illust_03 img{
+    bottom: -5%;
+    left: -3%;
+    width: 30%;
+    position: absolute;
+    margin: auto;
+    animation: fuwafuwa2 3s ease infinite;
+}
+
+#illust_04 img{
+    bottom: -5%;
+    right: -3%;
+    width: 25%;
+    position: absolute;
+    margin: auto;
+    animation: fuwafuwa 3s ease infinite;
+}
+
+#illust_05 img{
+    top: -5%;
+    right: -3%;
+    width: 25%;
+    position: absolute;
+    margin: auto;
+    animation: fuwafuwa2 3s ease infinite;
+}
