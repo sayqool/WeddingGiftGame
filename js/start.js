@@ -8,7 +8,7 @@ $('#' + 'btn-start-img').click(function(){
     cancelButtonText: '実はちがう...。'  
   }).then((result) => {
     if (result.value) {
-        window.location.href = "Question.html";
+        window.location.href = "2.html";
     }
   });
   
