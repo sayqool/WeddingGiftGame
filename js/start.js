@@ -1,9 +1,3 @@
-$(document).ready(function(){
-        swal("test");
-  });
-  
-
-
 $('#' + 'btn-start-img').click(function(){
   Swal.fire({
     title: 'あなたたちは落合夫婦ですか？',
