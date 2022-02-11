@@ -14,3 +14,22 @@ body{
     transform: scale(1.1);
     transition-duration: 0.5s;
 }
+
+.img-title img{
+    width: 50%;
+    position: absolute;
+    top:5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: fluffy 3s ease infinite;
+}
+
+
+.btn-next img{
+    bottom: 5%;
+    right: 5%;
+    width: 25%;
+    position: absolute;
+    margin: auto;
+}
