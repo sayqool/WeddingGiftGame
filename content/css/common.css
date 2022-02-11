@@ -33,3 +33,8 @@ body{
     position: absolute;
     margin: auto;
 }
+
+.upload-btn img{
+    width: 25%;
+    height:25%;
+}
