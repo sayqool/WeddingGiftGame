@@ -1,1 +1,57 @@
 
+.title-rule{
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.title-rule img{
+    height: 10%;
+}
+
+.box{
+    width: 45%;
+    height:85%;
+    align-items: center;
+    z-index: 1;
+}
+
+.void img{
+    width:130%;
+    padding-left: 15%;
+}
+
+
+.flex{
+    justify-content: space-between;
+}
+
+.title-img{
+    margin-top: 5px;
+    text-align: center;
+    height: 100%;
+}
+
+.title-img img{
+    width:35%;
+}
+.title-explain{
+    text-align: center;
+
+}
+.title-explain img{
+    width:85%;
+    text-align: center;
+
+}
+
+.content-explain{
+    text-align: center;
+
+}
+.content-explain img{
+    width:65%;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 100%;
+}
