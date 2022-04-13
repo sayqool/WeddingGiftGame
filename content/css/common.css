@@ -4,10 +4,16 @@ body{
 
 .bg{
     position:relative;
-    background-color: #E4F8C3;
+    background-color: white;
     overflow: hidden;
     width: 100%;
     height:100%;
+}
+
+.flex{
+    flex: auto;
+    display: flex;
+    align-items: center;
 }
 
 .btn-img img:hover {
@@ -37,4 +43,14 @@ body{
 .upload-btn img{
     width: 25%;
     height:25%;
+}
+
+
+.shadow-circle{
+    width: 390px;
+    height: 100px;
+    line-height: 100px;
+    background-color: #c0c0c0;
+    border-radius: 50%;
+    margin-top: -120px;
 }

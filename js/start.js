@@ -1,3 +1,10 @@
+$(document).ready(function(){
+  //処理
+  // const music = new Audio('/musics/music.mp3');
+  // music.play();
+});
+
+
 $('#' + 'btn-start-img').click(function(){
   Swal.fire({
     title: 'あなたたちは落合夫婦ですか？',
