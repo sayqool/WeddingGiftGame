@@ -2,7 +2,23 @@ $(document).ready(function(){
   //処理
   // const music = new Audio('/musics/music.mp3');
   // music.play();
+  reize();
 });
+
+$(function() {
+
+  $(window).resize(function() {
+    //リサイズされたときの処理
+    reize();
+  });
+
+});
+
+
+function reize(){
+  let w = $('#img-chara img').width();
+  $('.shadow-circle').css('width',w);
+}
 
 
 $('#' + 'btn-start-img').click(function(){
