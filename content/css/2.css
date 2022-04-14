@@ -10,48 +10,64 @@
 }
 
 .box{
+    position: relative;
     width: 45%;
     height:85%;
     align-items: center;
     z-index: 1;
 }
+.flex{
+    justify-content: space-between;
+}
+
+
 
 .void img{
+    position: absolute;
     width:130%;
     padding-left: 15%;
 }
 
 
-.flex{
-    justify-content: space-between;
-}
 
 .title-img{
-    margin-top: 5px;
     text-align: center;
-    height: 100%;
 }
-
 .title-img img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
     width:35%;
 }
-.title-explain{
-    text-align: center;
 
+.title-explain{
+    margin-top: 35%;
+    text-align: center;
 }
 .title-explain img{
+    left: 50%;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
     width:85%;
+    position: absolute;
     text-align: center;
 
 }
 
 .content-explain{
     text-align: center;
+    margin-top: 50%;
 
 }
 .content-explain img{
+     left: 50%;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    position: absolute;
     width:65%;
     text-align: center;
-    margin-top: 10%;
-    margin-bottom: 100%;
 }
