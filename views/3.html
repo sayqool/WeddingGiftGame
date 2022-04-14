@@ -7,24 +7,28 @@
 
 <body>
     <div class="bg">
-        <div id="3-title" class="img-title"><image src="../content/image/3-title.png"></image></div>
-        <div id="btn-next" class="btn-img btn-next"><image src="../content/image/btn-next.png"></image></div>
-        <div class="ranking-box">
-            <div>
-                <img src="../content/image/1st.png" />
-                <input id="upload-1" class="upload-btn" type="button" name="upload-1" accept=".png, .jpg, .jpeg" src="../content/image/upload-img.png" alt="写真をアップロードする">
-            </div>
-            <div>
-                <img src="../content/image/2nd.png" />
-                <input id="upload-2" class="upload-btn" type="file"  name="upload-2" accept=".png, .jpg, .jpeg" src="../content/image/upload-img.png" alt="写真をアップロードする">
-            </div>
-            <div>
-                <img src="../content/image/3rd.png" />
-                <input id="upload-3" class="upload-btn" type="file"  name="upload-3" accept=".png, .jpg, .jpeg" src="../content/image/upload-img.png" alt="写真をアップロードする">
-            </div>
+        <ul class="circles">
+            <li><image src="../content/image/logo.png"></image></li>
+            <li><image src="../content/image/logo.png"></image></li>
+            <li><image src="../content/image/logo.png"></image></li>
+            <li><image src="../content/image/logo.png"></image></li>
+            <li><image src="../content/image/logo.png"></image></li>
+            <li><image src="../content/image/logo.png"></image></li>
+            <li><image src="../content/image/logo.png"></image></li>
+            <li><image src="../content/image/logo.png"></image></li>
+            <li><image src="../content/image/logo.png"></image></li>
+            <li><image src="../content/image/logo.png"></image></li>
+    </ul>
+    <div class="flex">
+        <div id="img-chara">
+            <image src="../content/image/omi-2.png" style="display: none;"></image>
+            <div class="shadow-circle" style="display: none;"></div>
         </div>
+        <image class="wait-message" src="../content/image/text-wait-message.png" style="display: none;"></image>
+        <div id="btn-next" class="btn-img btn-next"><image src="../content/image/btn-question.png"></image></div>
+    </div>
     </div>
     <script src="../lib/sweetalert2.min.js"></script>
     <script src="../lib/jquery-3.6.0.min.js"></script>
-    <script src="../js/2.js" charset="utf-8"></script>
+    <script src="../js/3.js" charset="utf-8"></script>
 </body>
