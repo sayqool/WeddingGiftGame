@@ -23,5 +23,5 @@ $(document).ready(function(){
     // localStorage.clear();
     // 第一問目
     localStorage.setItem('qNum', 1);
-    window.location.href = "Question-Hazuki.html";
+    window.location.href = "result-chara.html";
 })
