@@ -1,7 +1,5 @@
 $(document).ready(function(){
   //処理
-  // const music = new Audio('/musics/music.mp3');
-  // music.play();
   reize();
 });
 
@@ -36,3 +34,12 @@ $('#' + 'btn-start-img').click(function(){
   });
   
 })
+
+let isFirst = true;
+document.body.addEventListener('click', () => {
+  if(isFirst){
+    const audio = new Audio('../content/music/nayutan8bit.mp3');
+    audio.play();
+  }
+  isFirst = false;
+});

@@ -16,3 +16,12 @@ $(document).ready(function(){
     let omiHeight = intViewportHeight * 0.35;
     $('#img-chara').height(omiHeight);
   }
+
+
+  $('#' + 'btn-next').click(function(){
+    // ローカルストレージのクリア
+    localStorage.clear();
+    // 第一問目
+    localStorage.setItem('qNum', 1);
+    window.location.href = "Question.html";
+})
