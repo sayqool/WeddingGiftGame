@@ -34,18 +34,10 @@ $(document).ready(function(){
   
   
   let cntPage = 0;
-  const nextPage = 2
+  const nextPage = 11
   $('#' + 'btn-next').click(function(){
-      cntPage++;
-  
-      if(cntPage < nextPage){
-        fadePicture('void');
-        fadePicture('title-img');
-        fadePicture('title-explain');
-        fadePicture('content-explain');
-      }else{
-        window.location.href = "3.html";
-      }
+    cntPage++;
+    chkAnswer();
   })
     
   function fadePicture(className){
@@ -54,3 +46,33 @@ $(document).ready(function(){
     $('.' + className + ' img:first-child').fadeIn(1000);
   }
     
+
+  function chkAnswer(){
+    let a1 = $('.q-1').text();
+    let a2 = $('.q-2').text();
+    let a3 = $('.q-3').text();
+
+    if(a1.trim().length == 0 || a2.trim().length == 0 || a3.trim().length == 0){
+      Swal.fire({
+        title: '空白の答えがあるようです！',
+        showCancelButton: true,
+        confirmButtonText: '次の画面に進む',
+        cancelButtonText: '入力しなおす。'  
+      }).then((result) => {
+        if (result.value) {
+          if(cntPage < nextPage){
+            localStorage.setItem("q" + cntPage + "-img",a1.trim());
+            localStorage.setItem("q" + cntPage + "-a1",a1.trim());
+            localStorage.setItem("q" + cntPage + "-a2",a2.trim());
+            localStorage.setItem("q" + cntPage + "-a3",a3.trim());
+            fadePicture('void');
+            fadePicture('content-explain');
+          }else{
+            window.location.href = "3.html";
+          }
+        }else{
+          return false;
+        }
+      });
+    }
+  }

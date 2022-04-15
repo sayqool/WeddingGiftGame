@@ -49,3 +49,5 @@ function fadePicture(className){
   $('.' + className + ' img:first-child').fadeIn(1000);
 }
   
+
+
