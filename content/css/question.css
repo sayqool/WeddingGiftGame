@@ -57,4 +57,23 @@
     position: absolute;
     width:65%;
     text-align: center;
+    display:flex;
+    justify-content: center;
+}
+
+.question textarea{
+    flex-grow: 5; /* 余白の割り当て */
+    font-size: x-large;
+}
+
+.q-1{
+    top: 30%;
+}
+
+.q-2{
+    top: 41%;
+}
+
+.q-3{
+    top:53%
 }
