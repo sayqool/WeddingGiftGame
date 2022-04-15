@@ -1,0 +1,51 @@
+body{
+    background-image: url('../image/bg-img.png');
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.box{
+    position: relative;
+    width: 50%;
+}
+.title-name img{
+    position: absolute;
+    top: 10%;
+    width: 80%;   
+    left: 50%;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+}
+
+.status-table table{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+}
+
+.feature img{
+    position: absolute;
+    top: 78%;
+    left: 10%;
+    width: 65%;
+}
+
+.text-feature img{
+    position: absolute;
+    top: 90%;
+    left: 55%;
+    width: 85%;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+}
+
+.chara img{
+    position: absolute;
+    top: 5%;
+    width: 85%;
+}
