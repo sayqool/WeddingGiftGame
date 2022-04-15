@@ -59,11 +59,11 @@
     text-align: center;
     display:flex;
     justify-content: center;
+    height:8%;
 }
 
 .question textarea{
     flex-grow: 1; /* 余白の割り当て */
-    margin: 10px;
     font-size: x-large;
 }
 
