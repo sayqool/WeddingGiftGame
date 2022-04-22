@@ -10,8 +10,8 @@ body{
 }
 .title-name img{
     position: absolute;
-    top: 10%;
-    width: 80%;   
+    top: 5%;
+    height: 20%;   
     left: 50%;
     transform: translate(-50%, 0%);
     -webkit-transform: translate(-50%, 0%);
@@ -20,8 +20,8 @@ body{
 
 .status-table table{
     position: absolute;
-    width:85%;
-    top: 40%;
+    top: 25%;
+    height: 35%;
     left: 50%;
     transform: translate(-50%, 0%);
     -webkit-transform: translate(-50%, 0%);
@@ -30,16 +30,18 @@ body{
 
 .feature img{
     position: absolute;
-    top: 78%;
+    top: 65%;
     left: 10%;
-    width: 65%;
+    /* /width: 65%; */
+    height:10%;
 }
 
 .text-feature img{
     position: absolute;
-    top: 90%;
-    left: 55%;
-    width: 85%;
+    top: 78%;
+    left: 52%;
+    /* width: 85%; */
+    height: 15%;
     transform: translate(-50%, 0%);
     -webkit-transform: translate(-50%, 0%);
     -ms-transform: translate(-50%, 0%);
@@ -49,4 +51,5 @@ body{
     position: absolute;
     top: 5%;
     width: 85%;
+    border-style:none;
 }
