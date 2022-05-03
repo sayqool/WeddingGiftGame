@@ -1,6 +1,5 @@
-const userName = "occhi";
+var userName = "occhi";
 
-let questionNum;
 $(document).ready(function(){
     //処理
     reize();
@@ -19,8 +18,8 @@ $(document).ready(function(){
   
   
   function reize(){
-    let intViewportHeight = window.innerHeight;
-    let intViewportWidth = window.innerWidth;
+    let intViewportHeight = $('#parent').height();
+    let intViewportWidth = $('#parent').width();
     let boxWidth = intViewportWidth * 0.85 / 2;
     let boxHeight = intViewportHeight * 0.85;
     $('.box').height(intViewportHeight);

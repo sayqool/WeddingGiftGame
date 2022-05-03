@@ -26,6 +26,8 @@ document.body.addEventListener('click', () => {
   if(isFirst){
     const audio = new Audio('../content/music/nayutan8bit.mp3');
     audio.play();
+    audio.volume = '0.2';
+    audio.loop = true;
   }
   isFirst = false;
 });

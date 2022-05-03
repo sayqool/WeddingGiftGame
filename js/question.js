@@ -1,4 +1,4 @@
-const userName = "occhi";
+var userName = "occhi";
 
 let questionNum;
 $(document).ready(function(){
@@ -35,8 +35,8 @@ $(document).ready(function(){
   }
   
   
-  let cntPage = 0;
-  const nextPage = 11
+  var cntPage = 0;
+  var nextPage = 11
   $('#' + 'btn-next').click(function(){
     cntPage++;
     chkAnswer();
@@ -65,7 +65,7 @@ $(document).ready(function(){
           setLocalstorage();
           if(cntPage < nextPage){
           }else{
-            window.location.href = "waiting-jeanne.html";
+            $("#" + ID_PARENT).load("waiting-jeanne.html");
           }
         }else{
           return false;
@@ -75,7 +75,7 @@ $(document).ready(function(){
       setLocalstorage();
       if(cntPage < nextPage){
       }else{
-        window.location.href = "waiting-jeanne.html";
+        $("#" + ID_PARENT).load("waiting-jeanne.html");
       }
     }
   }

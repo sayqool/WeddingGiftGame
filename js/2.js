@@ -28,8 +28,8 @@ function reize(){
 }
 
 
-let cntPage = 0;
-const nextPage = 2
+var cntPage = 0;
+var nextPage = 2
 $('#' + 'btn-next').click(function(){
     cntPage++;
 

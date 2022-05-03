@@ -20,5 +20,5 @@ $(document).ready(function(){
 
   $('#' + 'btn-next').click(function(){
     // 第一問目
-    window.location.href = "Question-Hazuki.html";
+    $("#" + ID_PARENT).load("Question-Hazuki.html");
 })

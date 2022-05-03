@@ -33,6 +33,11 @@ $(document).ready(function(){
     $("#" + ID_PARENT).width(width);
   }
 
+  $(window).on('beforeunload', function(e){
+    var message = '更新をおこなうと、ゲームは最初のページに戻ります。';
+    e.returnValue = message;
+    return message;
+  });
 
   function readFirstPage(){
     $("#" + ID_PARENT).load("Index.html");

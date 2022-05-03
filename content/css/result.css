@@ -1,4 +1,4 @@
-body{
+#parent{
     background-image: url('../image/bg-img.png');
      background-repeat: no-repeat;
      background-size: cover;
@@ -40,7 +40,7 @@ body{
     position: absolute;
     top: 78%;
     left: 52%;
-    /* width: 85%; */
+    width: 85%;
     height: 15%;
     transform: translate(-50%, 0%);
     -webkit-transform: translate(-50%, 0%);

@@ -1,4 +1,4 @@
-const userName = "hazuki";
+var userName = "hazuki";
 
 let questionNum;
 $(document).ready(function(){
@@ -35,8 +35,8 @@ $(document).ready(function(){
   }
   
   
-  let cntPage = 0;
-  const nextPage = 11
+  var cntPage = 0;
+  var nextPage = 11
   $('#' + 'btn-next').click(function(){
     cntPage++;
     chkAnswer();
