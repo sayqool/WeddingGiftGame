@@ -23,14 +23,24 @@ $(document).ready(function(){
     $(BODY).css("margin", 0);
     let innerHeight = window.innerHeight;
     let innerWidth = window.innerWidth;
-    
-    $("#" + ID_PARENT).height(innerHeight);
-    let hPatio = 768 / innerHeight;
-    let width = 1366;
-    if(innerWidth < 1366){
-      width = 1366 * hPatio;
+    if(innerWidth < innerHeight){
+      $("#" + ID_PARENT).width(innerWidth);
+      let wPatio = 1366 / innerWidth;
+      let height = 768;
+      if(innerHeight < height){
+        height = 768 * wPatio;
+      }
+      $("#" + ID_PARENT).height(height);
     }
-    $("#" + ID_PARENT).width(width);
+    else{
+      $("#" + ID_PARENT).height(innerHeight);
+      let hPatio = 768 / innerHeight;
+      let width = 1366;
+      if(innerWidth < 1366){
+        width = 1366 * hPatio;
+      }
+      $("#" + ID_PARENT).width(width);
+    }
   }
 
   $(window).on('beforeunload', function(e){
