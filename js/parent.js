@@ -10,6 +10,15 @@ $(document).ready(function(){
     readFirstPage();
   });
 
+  $(function() {
+
+    $(window).resize(function() {
+      //リサイズされたときの処理
+      reize();
+    });
+  
+  });
+
   function resize(){
     $(BODY).css("margin", 0);
     let innerHeight = window.innerHeight;
