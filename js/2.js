@@ -39,7 +39,7 @@ $('#' + 'btn-next').click(function(){
       fadePicture('title-explain');
       fadePicture('content-explain');
     }else{
-      window.location.href = "3.html";
+      $("#" + ID_PARENT).load("3.html");
     }
 })
   
