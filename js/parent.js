@@ -14,7 +14,7 @@ $(document).ready(function(){
 
     $(window).resize(function() {
       //リサイズされたときの処理
-      reize();
+      resize();
     });
   
   });
