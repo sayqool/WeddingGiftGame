@@ -41,7 +41,7 @@ $('#' + 'btn-start-img').click(function(){
     cancelButtonText: '実はちがう...。'  
   }).then((result) => {
     if (result.value) {
-        window.location.href = "2.html";
+      $("#" + ID_PARENT).load("2.html");
     }
   });
   
