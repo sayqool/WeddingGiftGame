@@ -39,19 +39,3 @@ $(document).ready(function(){
   }
 
 //==================================================================
-// ページ遷移系
-$('#' + 'btn-start-img').click(function(){
-  Swal.fire({
-    title: 'あなたたちは落合夫婦ですか？',
-    text: "このゲームは落合一輝兄弟と葉月姉妹のためのパーソナルなゲームです。",
-    type: 'warning',
-    showCancelButton: true,
-    confirmButtonText: '私たちは落合夫婦だ！',
-    cancelButtonText: '実はちがう...。'  
-  }).then((result) => {
-    if (result.value) {
-      $("#" + ID_PARENT).load("2.html");
-    }
-  });
-  
-})
