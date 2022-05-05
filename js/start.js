@@ -41,7 +41,7 @@ $('#' + 'btn-start-img').click(function(){
     type: 'warning',
     showCancelButton: true,
     confirmButtonText: '私たちは落合夫婦だ！',
-    cancelButtonText: '実はちがう...。'  
+    cancelButtonText: '実は                                                         ちがう...。'  
   }).then((result) => {
     if (result.value) {
       $("#" + ID_PARENT).load("2.html");
