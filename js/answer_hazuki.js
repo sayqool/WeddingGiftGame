@@ -1,4 +1,4 @@
-var userName = "occhi";
+var userName = "haduki";
 
 $(document).ready(function(){
     //処理
@@ -48,7 +48,7 @@ $(document).ready(function(){
 
 
     // show chara
-    var charaStore = ["atari", "omi","piale","polo","tomas"];
+    var charaStore = ["aris", "delmin","kirara","matoi","voidoll"];
     var storeNum = getRandomInt(5);
     var displayClass = charaStore[storeNum];
     $("."+ displayClass).show();
