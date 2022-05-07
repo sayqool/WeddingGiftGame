@@ -16,13 +16,13 @@ $(document).ready(function(){
   
     $(window).resize(function() {
       //リサイズされたときの処理
-      reize();
+      resize();
     });
   
   });
   
   
-  function reize(){
+  function resize(){
     $("#" + ID_PARENT).css("display", "relative");
     let intViewportHeight = $('#parent').height();
     let intViewportWidth = $('#parent').width();

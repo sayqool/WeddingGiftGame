@@ -1,6 +1,6 @@
 var userName = "occhi";
 
-let questionNum;
+// var questionNum;
 $(document).ready(function(){
     //処理
     // const music = new Audio('/musics/music.mp3');
@@ -63,20 +63,20 @@ $(document).ready(function(){
       }).then((result) => {
         if (result.value) {
           setLocalstorage();
-          if(cntPage < nextPage){
-          }else{
+          // if(cntPage < nextPage){
+          // }else{
             $("#" + ID_PARENT).load("waiting-jeanne.html");
-          }
+          // }
         }else{
           return false;
         }
       });
     }else{
       setLocalstorage();
-      if(cntPage < nextPage){
-      }else{
+      // if(cntPage < nextPage){
+      // }else{
         $("#" + ID_PARENT).load("waiting-jeanne.html");
-      }
+      // }
     }
   }
 
@@ -93,3 +93,5 @@ $(document).ready(function(){
     fadePicture('content-explain');
     $('.question textarea').val("");
   }
+
+
