@@ -22,7 +22,7 @@ $(document).ready(function(){
 
   $('#' + 'btn-next').click(function(){
     // 第一問目
-    $("#" + ID_PARENT).load("answercharactor.html");
+    $("#" + ID_PARENT).load("answer-hazuki.html");
 })
 
 /**
@@ -41,9 +41,9 @@ $(document).ready(function(){
 
 
 function renderAnswerTable(){
-  let usr = "occhi";
+  let usr = "hazuki";
   let table = $("."+ "tbl-answer1");
-  table.append('<tr><td colspan="2" class="title">一輝さんの回答' + '</td></tr>');
+  table.append('<tr><td colspan="2" class="title">葉月さんの回答' + '</td></tr>');
   for(i=1;i <= 5;i++){
     let trInfo = getLocalstrage(usr,i);
     let tr = "<tr><td><img src='" + trInfo[0] + "'/></td><td>";

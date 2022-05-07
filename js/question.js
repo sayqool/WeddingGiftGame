@@ -12,7 +12,7 @@ $(document).ready(function(){
 
     $('.void img').hide();
     $('.content-explain img').hide();
-    $('.void img:nth-child(' + questionNum + ')').fadeIn(1000);
+    $('.void img:nth-child(' + (questionNum % 3 + 1) + ')').fadeIn(1000);
     $('.content-explain img:nth-child(' + questionNum + ')').fadeIn(1000);
 
   });
@@ -35,10 +35,9 @@ $(document).ready(function(){
   }
   
   
-  var cntPage = 0;
+  var cntPage = localStorage.getItem('qNum');
   var nextPage = 11
   $('#' + 'btn-next').click(function(){
-    cntPage++;
     chkAnswer();
   })
     
@@ -84,7 +83,7 @@ $(document).ready(function(){
     let a1 = $('.q-1 textarea').val();
     let a2 = $('.q-2 textarea').val();
     let a3 = $('.q-3 textarea').val();
-    let srcUrl = $(".content-explain img").attr('src'); 
+    let srcUrl = $(".q" + cntPage).attr('src'); 
     localStorage.setItem(userName + "q" + cntPage + "-img",srcUrl);
     localStorage.setItem(userName + "q" + cntPage + "-a1",a1);
     localStorage.setItem(userName + "q" + cntPage + "-a2",a2);
@@ -92,6 +91,7 @@ $(document).ready(function(){
     fadePicture('void');
     fadePicture('content-explain');
     $('.question textarea').val("");
+    cntPage++;
   }
 
 

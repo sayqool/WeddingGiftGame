@@ -59,3 +59,8 @@ $(document).ready(function(){
   function getRandomInt(max) {
     return Math.floor(Math.random() * max);
   }
+
+  $('#' + 'btn-next').click(function(){
+    // 第一問目
+    $("#" + ID_PARENT).load("result-hazuki.html");
+})

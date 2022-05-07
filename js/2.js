@@ -39,7 +39,8 @@ $('#' + 'btn-next').click(function(){
       fadePicture('title-explain');
       fadePicture('content-explain');
     }else{
-      $("#" + ID_PARENT).load("3.html");
+      localStorage.setItem('qNum', 1);
+      $("#" + ID_PARENT).load("waiting-omi.html");
     }
 })
   

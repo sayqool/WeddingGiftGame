@@ -20,8 +20,7 @@ $(document).ready(function(){
 
   $('#' + 'btn-next').click(function(){
     // ローカルストレージのクリア
-    localStorage.clear();
+    // localStorage.clear();
     // 第一問目
-    localStorage.setItem('qNum', 1);
     $("#" + ID_PARENT).load("Question.html");
 })
