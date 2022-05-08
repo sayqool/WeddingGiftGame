@@ -53,4 +53,8 @@ $(document).ready(function(){
     $("#" + ID_PARENT).load("Index.html");
   }
 
+  function endPage(){
+    window.close();
+  }
+
 //==================================================================

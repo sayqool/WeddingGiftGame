@@ -7,7 +7,12 @@ $(document).ready(function(){
     $('.lbl-occhi-hero').text("一輝さんのヒーローは");
     $("."+ hero).show();
     hero = localStorage.getItem("haduki-hero");
+    $("."+ hero).show();
     $('.lbl-hadsuki-hero').text("葉月さんのヒーローは");
+
+    let url = localStorage.getItem("photo");
+    $(".album").src= url;
+    console.log(url);
   });
 
 
@@ -45,36 +50,8 @@ function renderAnswerTable(usr, table, title){
       tr += "</td></tr>"
       table.append(tr);
     }
-    // table = $("."+ "tbl-answer2");
-    // for(i=5;i <= 8;i++){
-    //   let trInfo = getLocalstrage(usr,i);
-    //   let tr = "<tr><td><img src='" + trInfo[0] + "'/></td><td>";
-    //   if(trInfo[1] != ""){
-    //       tr += "1." + trInfo[1];
-    //   }
-    //   if(trInfo[2] != ""){
-    //     tr += "2." + trInfo[2];
-    //   }
-    //   if(trInfo[3] != ""){
-    //     tr += "3." + trInfo[3];
-    //   } 
-    //   tr += "</td></tr>"
-    //   table.append(tr);
-    // }
-    // table = $("."+ "tbl-answer3");
-    // for(i=9;i <= 11;i++){
-    //   let trInfo = getLocalstrage(usr,i);
-    //   let tr = "<tr><td><img src='" + trInfo[0] + "'/></td><td>";
-    //   if(trInfo[1] != ""){
-    //       tr += "1." + trInfo[1];
-    //   }
-    //   if(trInfo[2] != ""){
-    //     tr += "2." + trInfo[2];
-    //   }
-    //   if(trInfo[3] != ""){
-    //     tr += "3." + trInfo[3];
-    //   } 
-    //   tr += "</td></tr>"
-    //   table.append(tr);
-    // }
   }
+
+  $('#' + 'btn-next').click(function(){
+    endPage();
+    })
