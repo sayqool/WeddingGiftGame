@@ -1,0 +1,35 @@
+.book{
+    margin: 0;
+    padding: 0;
+    height: 172mm;
+    width: 251mm;
+}
+.book table
+{
+    height:100%;
+    width: 100%;
+    border-collapse:collapse;
+}
+
+.book td{
+    border:1px black solid;
+    height:50%;
+    width: 25%;
+}
+.book .tbl-answer1,.book .tbl-answer2{
+    margin: 5px;;
+}
+.book .tbl-answer1 td, .book .tbl-answer2 td{
+    border:none;
+    height: 100%;
+    /* width: 100%; */
+    color: white;
+}
+.title{
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+}
+.sakasa{
+    transform: rotate(180deg);
+}

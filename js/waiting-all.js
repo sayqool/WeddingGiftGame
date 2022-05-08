@@ -22,5 +22,6 @@ $('#' + 'btn-next').click(function(){
   // ローカルストレージのクリア
   // localStorage.clear();
   // 第一問目
-  $("#" + ID_PARENT).load("photo-upload.html");
+    talkZundamon('../content/voice/006_ずんだもん（あまあま）_ことしいちねんをふ….wav');
+    $("#" + ID_PARENT).load("photo-upload.html");
 })

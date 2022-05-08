@@ -18,3 +18,9 @@ $(function() {
 		reader.readAsDataURL(file);
 	});
 });
+
+$('#' + 'btn-next').click(function(){
+    // 第一問目
+    talkZundamon('../content/voice/ending_001.wav');
+    $("#" + ID_PARENT).load("end.html");
+})

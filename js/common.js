@@ -1,6 +1,5 @@
-
-let isFirst = true;
-let audio;
+var isFirst = true;
+var audio;
 document.body.addEventListener('click', () => {
   if(isFirst){
     setTimeout(function(){
@@ -13,7 +12,7 @@ document.body.addEventListener('click', () => {
   isFirst = false;
 });
 
-let talkWav;
+var talkWav;
 function talkZundamon(url){
     if(talkWav != null){
         talkWav.pause();
@@ -44,4 +43,8 @@ function playMusic(url){
     audio.volume = '0.2';
     audio.loop = true;
   },3000);
+}
+
+function pictureDisplay(){
+  
 }

@@ -54,7 +54,7 @@ $(document).ready(function(){
     var storeNum = getRandomInt(5);
     var displayClass = charaStore[storeNum];
     $("."+ displayClass).show();
-
+    localStorage.setItem(userName + "-hero",charaStore[storeNum]);
   }
   
 
@@ -63,7 +63,8 @@ $(document).ready(function(){
   }
 
   $('#' + 'btn-next').click(function(){
-    // 第一問目
+    // 写真選択へ
+    talkZundamon('../content/voice/011_ずんだもん（あまあま）_たんまつをいっしょ….wav');
     playMusic('../content/music/nayutan8bit.mp3');
     $("#" + ID_PARENT).load("waiting-all.html");
 })

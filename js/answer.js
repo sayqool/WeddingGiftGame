@@ -54,6 +54,7 @@ $(document).ready(function(){
     var displayClass = charaStore[storeNum];
     playMusic('../content/music/allmusic.mp3', charaMusicStore[storeNum], "1272.0",true);
     $("."+ displayClass).show();
+    localStorage.setItem(userName + "-hero",charaStore[storeNum]);
 
   }
   
