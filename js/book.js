@@ -13,6 +13,18 @@ $(document).ready(function(){
     let url = localStorage.getItem("photo");
     $(".album").src= url;
     console.log(url);
+
+    setTimeout(function(){
+        talkZundamon('../content/voice/ending_002.wav');
+      },5000);
+
+      setTimeout(function(){
+        talkZundamon('../content/voice/ending_003.wav');
+      },12000);
+
+      setTimeout(function(){
+        talkZundamon('../content/voice/ending_004.wav');
+      },20000);
   });
 
 
