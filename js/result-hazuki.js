@@ -21,6 +21,7 @@ $(document).ready(function(){
 
 
   $('#' + 'btn-next').click(function(){
+    talkZundamon('../content/voice/そんなはづきさんを.wav');
     // 第一問目
     $("#" + ID_PARENT).load("answer-hazuki.html");
 })

@@ -21,20 +21,11 @@ function reizeStart(){
 
 
 
-let isFirst = true;
-document.body.addEventListener('click', () => {
-  if(isFirst){
-    // const audio = new Audio('../content/music/nayutan8bit.mp3');
-    // audio.play();
-    // audio.volume = '0.2';
-    // audio.loop = true;
-  }
-  isFirst = false;
-});
 
 
 // ページ遷移系
 $('#' + 'btn-start-img').click(function(){
+  talkZundamon('../content/voice/001_ずんだもん（あまあま）_あいじょうせつりか….wav');
   Swal.fire({
     title: 'あなたたちは落合夫婦ですか？',
     text: "このゲームは落合一輝兄弟と葉月姉妹のためのパーソナルなゲームです。",
@@ -44,6 +35,7 @@ $('#' + 'btn-start-img').click(function(){
     cancelButtonText: '実は                                                         ちがう...。'  
   }).then((result) => {
     if (result.value) {
+      talkZundamon('../content/voice/002_ずんだもん（あまあま）_るーるせつめい.wav');
       $("#" + ID_PARENT).load("2.html");
     }
   });

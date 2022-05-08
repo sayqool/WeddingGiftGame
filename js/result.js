@@ -9,7 +9,7 @@ $(document).ready(function(){
     $('.shadow-circle').fadeIn(1000);
 
     renderAnswerTable();
-  
+
   });
   
 
@@ -22,6 +22,7 @@ $(document).ready(function(){
 
   $('#' + 'btn-next').click(function(){
     // 第一問目
+    talkZundamon('../content/voice/そんないっきさんを.wav');
     $("#" + ID_PARENT).load("answercharactor.html");
 })
 

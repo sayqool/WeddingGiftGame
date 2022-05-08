@@ -54,6 +54,7 @@ $(document).ready(function(){
     let a3 = $('.q-3 textarea').val();
 
     if(a1.trim().length == 0 || a2.trim().length == 0 || a3.trim().length == 0){
+      talkZundamon('../content/voice/015_ずんだもん（あまあま）_あれっ？まだうまっ….wav');
       Swal.fire({
         title: '空白の答えがあるようです！',
         showCancelButton: true,
@@ -61,6 +62,7 @@ $(document).ready(function(){
         cancelButtonText: '入力しなおす。'  
       }).then((result) => {
         if (result.value) {
+          talkZundamon('../content/voice/016_ずんだもん（あまあま）_ほんとにそれでいい….wav');
           setLocalstorage();
           // if(cntPage < nextPage){
           // }else{
@@ -71,6 +73,7 @@ $(document).ready(function(){
         }
       });
     }else{
+      talkZundamon('../content/voice/010_ずんだもん（あまあま）_たんまつをいっきさ….wav');
       setLocalstorage();
       // if(cntPage < nextPage){
       // }else{

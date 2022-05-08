@@ -54,6 +54,7 @@ $(document).ready(function(){
     let a3 = $('.q-3 textarea').val();
 
     if(a1.trim().length == 0 || a2.trim().length == 0 || a3.trim().length == 0){
+      talkZundamon('../content/voice/015_ずんだもん（あまあま）_あれっ？まだうまっ….wav');
       Swal.fire({
         title: '空白の答えがあるようです！',
         showCancelButton: true,
@@ -61,12 +62,15 @@ $(document).ready(function(){
         cancelButtonText: '入力しなおす。'  
       }).then((result) => {
         if (result.value) {
+          talkZundamon('../content/voice/016_ずんだもん（あまあま）_ほんとにそれでいい….wav');
           setLocalstorage();
           if(cntPage < nextPage){
+            talkZundamon('../content/voice/008_ずんだもん（あまあま）_たんまつをはづきさ….wav');
             localStorage.setItem('qNum', cntPage);
             $("#" + ID_PARENT).load("waiting-omi.html");
           }else{
-            $("#" + ID_PARENT).load("result.html");
+            talkZundamon('../content/voice/結果発表.wav');
+            $("#" + ID_PARENT).load("waiting-before-result.html");
           }
         }else{
           return false;
@@ -76,9 +80,11 @@ $(document).ready(function(){
       setLocalstorage();
       if(cntPage < nextPage){
         localStorage.setItem('qNum', cntPage);
+        talkZundamon('../content/voice/008_ずんだもん（あまあま）_たんまつをはづきさ….wav');
         $("#" + ID_PARENT).load("waiting-omi.html");
       }else{
-        $("#" + ID_PARENT).load("result.html");
+        talkZundamon('../content/voice/結果発表.wav');
+        $("#" + ID_PARENT).load("waiting-before-result.html");
       }
     }
   }

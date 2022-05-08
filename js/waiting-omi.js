@@ -22,5 +22,6 @@ $(document).ready(function(){
     // ローカルストレージのクリア
     // localStorage.clear();
     // 第一問目
+    talkZundamon('../content/voice/007_ずんだもん（あまあま）_いっきさんにたいし….wav');
     $("#" + ID_PARENT).load("Question.html");
 })

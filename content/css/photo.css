@@ -1,0 +1,76 @@
+.add-button {
+     /* サイズを設定 */
+    height: 300px;
+    width: 300px;
+
+    /* ボタンにする画像を設定 */
+    background: url(../image/photo-add.png) center center / contain no-repeat;
+
+    /* インラインボックスに設定 */
+    display: inline-block;
+    /* マウスカーソルを当てた時、ポインタに設定 */
+    cursor: pointer;
+    top:15%;
+    right:20%;
+}
+
+.add-button:hover {
+    background: url(../image/photo-add.png) center center / contain no-repeat;
+}
+
+.add-button input{
+     /* デフォルトのinputは出力なし */
+    display: none;
+}
+
+.obj-photo{
+    position: relative;
+    width: 500px;
+    height:500px;
+}
+.photo-frame, .add-button, .photo-title{
+    position: absolute;
+}
+.photo-title{
+    bottom: 8%;
+    right: 14%;
+    width: 70%;
+}
+
+.photo-1{
+    position: absolute;
+    right: 1%;
+    transform: rotate(10deg);
+    top: 17%;
+}
+
+.photo-2{
+    position: absolute;
+    right: 23%;
+    transform: rotate(-4deg);
+    z-index: 2;
+    top: -7%;
+}
+
+.photo-3{
+    position: absolute;
+    right: 33%;
+    transform: rotate(14deg);
+    top: 39%;
+    z-index: 1;
+}
+
+.photo-4{
+    position: absolute;
+    right: 50%;
+    transform: rotate(-2deg);
+    top: -13%;
+    z-index: 1;
+}
+
+.photo-5{
+    position: absolute;
+    right: 65%;
+    transform: rotate(-2deg);
+    top: 36%;
+}

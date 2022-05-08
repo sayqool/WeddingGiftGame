@@ -49,8 +49,10 @@ $(document).ready(function(){
 
     // show chara
     var charaStore = ["atari", "omi","piale","polo","tomas"];
+    var charaMusicStore =["26.0","405.0","1026.0","894.0","979.0"];
     var storeNum = getRandomInt(5);
     var displayClass = charaStore[storeNum];
+    playMusic('../content/music/allmusic.mp3', charaMusicStore[storeNum], "1272.0",true);
     $("."+ displayClass).show();
 
   }
@@ -62,5 +64,6 @@ $(document).ready(function(){
 
   $('#' + 'btn-next').click(function(){
     // 第一問目
+    talkZundamon('../content/voice/つづいてはづきさん.wav');
     $("#" + ID_PARENT).load("result-hazuki.html");
 })

@@ -49,6 +49,8 @@ $(document).ready(function(){
 
     // show chara
     var charaStore = ["aris", "delmin","kirara","matoi","voidoll"];
+    var charaMusicStore =["1144.0","26.0","863.0","372.0","1171.0"];
+    playMusic('../content/music/allmusic.mp3', charaMusicStore[storeNum], "1272.0",true);
     var storeNum = getRandomInt(5);
     var displayClass = charaStore[storeNum];
     $("."+ displayClass).show();
@@ -62,5 +64,6 @@ $(document).ready(function(){
 
   $('#' + 'btn-next').click(function(){
     // 第一問目
+    playMusic('../content/music/nayutan8bit.mp3');
     $("#" + ID_PARENT).load("waiting-all.html");
 })

@@ -8,6 +8,7 @@ $(document).ready(function(){
   $('.title-img img:nth-child(n+2)').hide();
   $('.title-explain img:nth-child(n+2)').hide();
   $('.content-explain img:nth-child(n+2)').hide();
+  talkZundamon('../content/voice/003_ずんだもん（あまあま）_ふたりのあいしょう….wav');
 });
 
 
@@ -34,12 +35,14 @@ $('#' + 'btn-next').click(function(){
     cntPage++;
 
     if(cntPage < nextPage){
+      talkZundamon('../content/voice/005_ずんだもん（あまあま）_ふたりのおもいでを….wav');
       fadePicture('void');
       fadePicture('title-img');
       fadePicture('title-explain');
       fadePicture('content-explain');
     }else{
       localStorage.setItem('qNum', 1);
+      talkZundamon('../content/voice/004_ずんだもん（あまあま）_ぼいどーるからしゅ….wav');
       $("#" + ID_PARENT).load("waiting-omi.html");
     }
 })
